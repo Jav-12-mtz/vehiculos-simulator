@@ -155,9 +155,8 @@ class Coche(Vehiculo):
         return self.precio_base * dias + (self.num_puertas * 10)
 
     def mostrar_info(self):
-        # Extiende el método base: primero lo reutiliza y añade lo suyo.
+        # Extiende el método base: primero lo reutiliza y añade su línea propia.
         super().mostrar_info()
-        print("  Tipo        : Coche 🚗")
         print(f"  Puertas     : {self.num_puertas}")
 
     def abrir_maletero(self):
@@ -178,7 +177,6 @@ class Moto(Vehiculo):
 
     def mostrar_info(self):
         super().mostrar_info()
-        print("  Tipo        : Moto 🏍️")
         print(f"  Cilindrada  : {self.cilindrada} cc")
 
     def hacer_caballito(self):
